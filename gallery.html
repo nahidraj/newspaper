@@ -67,16 +67,19 @@
     <div class="middle_header">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 align-self-center">
-            <div class="logo">
+          <div class="col-md-12 col-lg-4 align-self-center">
+            <div class="logo d-flex justify-content-between align-items-center">
               <a href="index.html">
-                <img src="assets/img/logo.png" alt="logo">
+                <img src="assets/img/logo.png" alt="logo" class="w-100 img-fluid">
               </a>
+              <div class="mobile_menu_bar d-block d-lg-none">
+                <i class="fas fa-bars"></i>
+              </div>
             </div>
           </div>
-          <div class="col-lg-7 align-self-center ms-auto">
+          <div class="col-md-7 align-self-center ms-auto d-none d-lg-block">
             <div class="add text-end">
-              <img src="assets/img/add.png" alt="add">
+              <img src="assets/img/add.png" alt="add" class="img-fluid w-100">
             </div>
           </div>
         </div>
@@ -85,7 +88,7 @@
     <!-- main menu part -->
     <div class="main_menu">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="d-lg-flex justify-content-between align-items-center">
           <div class="menu">
             <ul class="list-unstyled">
               <li>
@@ -114,13 +117,39 @@
               <li><a href="#">বিনোদন</a></li>
               <li><a href="#">তথ্যপ্রযুক্তি <i class="fas fa-chevron-down"></i></a></li>
               <li><a href="#">সারাদেশ</a></li>
-              <li><a href="#">ক্যাম্পাস <i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="#">ক্যাম্পাস <i class="fas fa-chevron-down"></i></a>
+                <ul class="list-unstyled sub-menu">
+                  <li><a href="category.html">আওয়ামীলীগ</a></li>
+                  <li><a href="category.html">বিএনপি</a></li>
+                  <li><a href="category.html">অন্যান্য</a></li>
+                  <li><a href="category.html">আওয়ামীলীগ</a></li>
+                  <li><a href="category.html">বিএনপি</a></li>
+                  <li><a href="category.html">অন্যান্য</a></li>
+                  <li><a href="category.html">আওয়ামীলীগ</a></li>
+                  <li><a href="category.html">বিএনপি</a></li>
+                  <li><a href="category.html">অন্যান্য</a></li>
+                  <li><a href="category.html">আওয়ামীলীগ</a></li>
+                  <li><a href="category.html">বিএনপি</a></li>
+                  <li><a href="category.html">অন্যান্য</a></li>
+                  <li><a href="category.html">আওয়ামীলীগ</a></li>
+                  <li><a href="category.html">বিএনপি</a></li>
+                  <li><a href="category.html">অন্যান্য</a></li>
+                </ul>
+              </li>
               <li><a href="#">গণমাধ্যম</a></li>
               <li><a href="#">আরো</a></li>
             </ul>
           </div>
-          <div class="search">
-            <button><i class="fas fa-search"></i></button>
+          <div class="search d-none d-lg-block position-relative">
+            <button class="search_btn"><i class="fas fa-search"></i></button>
+            <form action="">
+              <div class="search-box">
+                <input type="text" placeholder="Search here...">
+                <button type="submit">
+                  <i class="fas fa-search inner-search"></i>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -151,7 +180,7 @@
     <section class="gallery">
       <div class="container">
         <div class="row g-4 parent-container">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="assets/img/medium-news-1.png" class="d-block w-100 parent-container">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -168,7 +197,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="assets/img/medium-news-1.png" class="d-block w-100 parent-container">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -185,7 +214,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="assets/img/medium-news-1.png" class="d-block w-100 parent-container">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -202,7 +231,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="assets/img/medium-news-1.png" class="d-block w-100 parent-container">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -219,7 +248,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="assets/img/medium-news-1.png" class="d-block w-100 parent-container">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -236,7 +265,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="assets/img/medium-news-1.png" class="d-block w-100 parent-container">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -253,7 +282,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="assets/img/medium-news-1.png" class="d-block w-100 parent-container">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -270,7 +299,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="assets/img/medium-news-1.png" class="d-block w-100 parent-container">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -311,7 +340,7 @@
     <section class="gallery">
       <div class="container">
         <div class="row g-4">
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="d-block w-100 vidplay">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -328,7 +357,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="d-block w-100 vidplay">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -345,7 +374,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="d-block w-100 vidplay">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -362,7 +391,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="d-block w-100 vidplay">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -379,7 +408,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="d-block w-100 vidplay">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -396,7 +425,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="d-block w-100 vidplay">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -413,7 +442,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="d-block w-100 vidplay">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -430,7 +459,7 @@
               </div>
             </a>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 col-sm-6">
             <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="d-block w-100 vidplay">
               <div class="medium_news_widget">
                 <div class="image position-relative">
@@ -491,7 +520,7 @@
               <p>বার্তা সম্পাদক : আবু হুরায়রা চৌধুরী</p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mt-4 mt-lg-0">
             <div class="footer_widget">
               <h2 class="footer_title">অফিস:</h2>
               <p>অফিস : মিরপুর, ঢাকা, বাংলাদেশ-১২১৬
@@ -500,7 +529,7 @@
               <p>মোবাইল : <a href="tel:01710-000000">01710-000000</a></p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mt-4 mt-lg-0">
             <div class="footer_widget">
               <h2 class="footer_title">আলোচিত সংবাদসমূহ ::</h2>
               <div class="widget_image d-flex">
@@ -533,7 +562,7 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="text text-end">
+            <div class="text text-lg-end">
               <p> News Paper Developed BY <a href="#">ThemesRare.com</a></p>
             </div>
           </div>

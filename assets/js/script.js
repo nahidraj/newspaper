@@ -28,7 +28,7 @@
 		responsive: [{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 2,
+					slidesToShow: 1,
 				},
 			},
 			{
@@ -82,6 +82,13 @@
 		centerPadding: "50px",
 		slidesToScroll: 1,
 		asNavFor: ".large-image",
+		responsive: [{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 3,
+			},
+		},
+	],
 	});
 
 	// // gallery big image slider js
@@ -155,20 +162,24 @@
 
 	// mobilel menu js
 
-	$(".mobile-topbar .bars i").on("click", function () {
-		$(".mobile-menu-overlay,.mobile-menu-main").addClass("active");
-		return false;
-	});
+	$(".mobile_menu_bar i").on("click", function () {
+    var $icon = $(this);
+    $(".main_menu").toggleClass("active");
+    
+    // Toggle between different icons using classes
+    if ($icon.hasClass("fa-bars")) {
+        $icon.removeClass("fa-bars").addClass("fa-times");
+    } else {
+        $icon.removeClass("fa-times").addClass("fa-bars");
+    }
+});
 
-	$(".close-mobile-menu,.mobile-menu-overlay").on("click", function () {
-		$(".mobile-menu-overlay,.mobile-menu-main").removeClass("active");
-	});
 
-	$('.sub-mobile-menu ul').hide();
-	$(".sub-mobile-menu a").on("click", function () {
-		$(this).parent(".sub-mobile-menu").children("ul").slideToggle("100");
-		$(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
-	});
+	// $('.sub-mobile-menu ul').hide();
+	// $(".sub-mobile-menu a").on("click", function () {
+	// 	$(this).parent(".sub-mobile-menu").children("ul").slideToggle("100");
+	// 	$(this).find(".right").toggleClass("fa-caret-up fa-caret-down");
+	// });
 
 	// document.addEventListener('contextmenu', function (e) {
 	// 	e.preventDefault();

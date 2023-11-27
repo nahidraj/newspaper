@@ -67,16 +67,19 @@
     <div class="middle_header">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 align-self-center">
-            <div class="logo">
+          <div class="col-md-12 col-lg-4 align-self-center">
+            <div class="logo d-flex justify-content-between align-items-center">
               <a href="index.html">
-                <img src="assets/img/logo.png" alt="logo">
+                <img src="assets/img/logo.png" alt="logo" class="w-100 img-fluid">
               </a>
+              <div class="mobile_menu_bar d-block d-lg-none">
+                <i class="fas fa-bars"></i>
+              </div>
             </div>
           </div>
-          <div class="col-lg-7 align-self-center ms-auto">
+          <div class="col-md-7 align-self-center ms-auto d-none d-lg-block">
             <div class="add text-end">
-              <img src="assets/img/add.png" alt="add">
+              <img src="assets/img/add.png" alt="add" class="img-fluid w-100">
             </div>
           </div>
         </div>
@@ -85,7 +88,7 @@
     <!-- main menu part -->
     <div class="main_menu">
       <div class="container">
-        <div class="d-flex justify-content-between align-items-center">
+        <div class="d-lg-flex justify-content-between align-items-center">
           <div class="menu">
             <ul class="list-unstyled">
               <li>
@@ -114,13 +117,39 @@
               <li><a href="#">বিনোদন</a></li>
               <li><a href="#">তথ্যপ্রযুক্তি <i class="fas fa-chevron-down"></i></a></li>
               <li><a href="#">সারাদেশ</a></li>
-              <li><a href="#">ক্যাম্পাস <i class="fas fa-chevron-down"></i></a></li>
+              <li><a href="#">ক্যাম্পাস <i class="fas fa-chevron-down"></i></a>
+                <ul class="list-unstyled sub-menu">
+                  <li><a href="category.html">আওয়ামীলীগ</a></li>
+                  <li><a href="category.html">বিএনপি</a></li>
+                  <li><a href="category.html">অন্যান্য</a></li>
+                  <li><a href="category.html">আওয়ামীলীগ</a></li>
+                  <li><a href="category.html">বিএনপি</a></li>
+                  <li><a href="category.html">অন্যান্য</a></li>
+                  <li><a href="category.html">আওয়ামীলীগ</a></li>
+                  <li><a href="category.html">বিএনপি</a></li>
+                  <li><a href="category.html">অন্যান্য</a></li>
+                  <li><a href="category.html">আওয়ামীলীগ</a></li>
+                  <li><a href="category.html">বিএনপি</a></li>
+                  <li><a href="category.html">অন্যান্য</a></li>
+                  <li><a href="category.html">আওয়ামীলীগ</a></li>
+                  <li><a href="category.html">বিএনপি</a></li>
+                  <li><a href="category.html">অন্যান্য</a></li>
+                </ul>
+              </li>
               <li><a href="#">গণমাধ্যম</a></li>
               <li><a href="#">আরো</a></li>
             </ul>
           </div>
-          <div class="search">
-            <button><i class="fas fa-search"></i></button>
+          <div class="search d-none d-lg-block position-relative">
+            <button class="search_btn"><i class="fas fa-search"></i></button>
+            <form action="">
+              <div class="search-box">
+                <input type="text" placeholder="Search here...">
+                <button type="submit">
+                  <i class="fas fa-search inner-search"></i>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -134,11 +163,11 @@
     <section class="section_one">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9">
+          <div class="col-xl-9">
             <div class="row">
               <div class="col-lg-8">
                 <!-- big news slider widget -->
-                <div class="big_news_slider_widget">
+                <div class="big_news_slider_widget mb-4 mb-sm-0">
                   <div class="slider_item position-relative">
                     <a href="#" class="d-block w-100">
                       <img src="assets/img/big-news-slider-image-1.png" alt="big-news-slider-image-1"
@@ -160,8 +189,8 @@
                   </div>
                 </div>
                 <!-- medium news widget -->
-                <div class="row mt-4">
-                  <div class="col-lg-6">
+                <div class="row g-4 gy-sm-0 mt-sm-4">
+                  <div class="col-lg-6 col-sm-6">
                     <a href="#" class="d-block w-100">
                       <div class="medium_news_widget">
                         <div class="image position-relative">
@@ -178,7 +207,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-lg-6 col-sm-6">
                     <a href="#" class="d-block w-100">
                       <div class="medium_news_widget">
                         <div class="image">
@@ -195,9 +224,9 @@
                 </div>
               </div>
               <!-- small news widget -->
-              <div class="col-lg-4">
+              <div class="col-lg-4 mt-4 mt-lg-0">
                 <div class="row g-3">
-                  <div class="col-lg-12">
+                  <div class="col-md-6 col-lg-12">
                     <a href="#" class="d-block w-100">
                       <div class="small_news_widget d-flex">
                         <div class="image position-relative">
@@ -212,7 +241,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-md-6 col-lg-12">
                     <a href="#" class="d-block w-100">
                       <div class="small_news_widget d-flex">
                         <div class="image">
@@ -224,7 +253,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-md-6 col-lg-12">
                     <a href="#" class="d-block w-100">
                       <div class="small_news_widget d-flex">
                         <div class="image">
@@ -236,7 +265,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-md-6 col-lg-12">
                     <a href="#" class="d-block w-100">
                       <div class="small_news_widget d-flex">
                         <div class="image position-relative">
@@ -251,7 +280,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-md-6 col-lg-12">
                     <a href="#" class="d-block w-100">
                       <div class="small_news_widget d-flex">
                         <div class="image">
@@ -266,8 +295,8 @@
                 </div>
               </div>
             </div>
-            <div class="row mt-4">
-              <div class="col-lg-4">
+            <div class="row mt-4 g-4 gy-lg-0">
+              <div class="col-lg-4 col-sm-6">
                 <a href="#" class="d-block w-100">
                   <div class="medium_news_widget">
                     <div class="image">
@@ -281,7 +310,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-sm-6">
                 <a href="#" class="d-block w-100">
                   <div class="medium_news_widget">
                     <div class="image position-relative">
@@ -298,7 +327,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-4">
+              <div class="col-lg-4 col-sm-6">
                 <a href="#" class="d-block w-100">
                   <div class="medium_news_widget">
                     <div class="image">
@@ -314,7 +343,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-md-6 col-xl-3 mt-4 mt-xxl-0">
             <div class="news_sidebar">
               <div class="sidebar_widget">
                 <h3 class="sidebar_title">
@@ -333,8 +362,8 @@
                 </h3>
                 <div class="search__">
                   <form action="#">
-                    <div class="row gx-3">
-                      <div class="col-lg-4">
+                    <div class="row gx-2">
+                      <div class="col-sm-4 mb-2 mb-sm-0">
                         <div class="input_groups">
                           <select class="form-select shadow-none form-select-lg" aria-label="Large select example">
                             <option selected>দিন</option>
@@ -344,7 +373,7 @@
                           </select>
                         </div>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-sm-4 mb-2 mb-sm-0">
                         <div class="input_groups">
                           <select class="form-select shadow-none form-select-lg" aria-label="Large select example">
                             <option selected>মাস</option>
@@ -354,7 +383,7 @@
                           </select>
                         </div>
                       </div>
-                      <div class="col-lg-4">
+                      <div class="col-sm-4 mb-2 mb-sm-0">
                         <div class="input_groups">
                           <select class="form-select shadow-none form-select-lg" aria-label="Large select example">
                             <option selected>বছর</option>
@@ -594,7 +623,7 @@
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
               tabindex="0">
               <div class="row g-4">
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -608,7 +637,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -622,7 +651,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -636,7 +665,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -650,7 +679,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -664,7 +693,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -678,7 +707,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -692,7 +721,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -711,7 +740,7 @@
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
               tabindex="0">
               <div class="row g-4">
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -725,7 +754,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -739,7 +768,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -753,7 +782,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -767,7 +796,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -786,7 +815,7 @@
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
               tabindex="0">
               <div class="row g-4">
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -800,7 +829,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -814,7 +843,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -828,7 +857,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-3">
+                <div class="col-sm-6 col-lg-3">
                   <a href="#" class="d-block w-100">
                     <div class="medium_news_widget">
                       <div class="image">
@@ -853,14 +882,14 @@
     <section class="section_three">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8">
+          <div class="col-xl-8">
             <div class="section_title">
               <div class="row">
-                <div class="col-lg-9 align-self-center">
+                <div class="col-sm-9 align-self-center">
                   <h2 class="main_title">সারাদেশ</h2>
                 </div>
-                <div class="col-lg-3 align-self-end">
-                  <div class="text-end">
+                <div class="col-sm-3 align-self-end">
+                  <div class="text-sm-end mt-2 mt-sm-0">
                     <a class="read_more_btn" href="#">আরো খবর <i class="fas fa-chevron-right"></i></a>
                   </div>
                 </div>
@@ -869,7 +898,7 @@
             <div class="row">
               <div class="col-lg-7">
                 <div class="row g-4">
-                  <div class="col-lg-12">
+                  <div class="col-sm-6 col-lg-12">
                     <a href="#" class="d-block w-100">
                       <div class="medium_news_widget">
                         <div class="image">
@@ -883,7 +912,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-sm-6 col-lg-6">
                     <a href="#" class="d-block w-100">
                       <div class="medium_news_widget">
                         <div class="image">
@@ -897,7 +926,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-6">
+                  <div class="col-sm-6 col-lg-6">
                     <a href="#" class="d-block w-100">
                       <div class="medium_news_widget">
                         <div class="image">
@@ -913,9 +942,9 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-5">
+              <div class="col-lg-5 mt-4 mt-lg-0">
                 <div class="row g-3">
-                  <div class="col-lg-12">
+                  <div class="col-md-6 col-lg-12">
                     <a href="#" class="d-block w-100">
                       <div class="small_news_widget d-flex">
                         <div class="image">
@@ -927,7 +956,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-md-6 col-lg-12">
                     <a href="#" class="d-block w-100">
                       <div class="small_news_widget d-flex">
                         <div class="image">
@@ -939,7 +968,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-md-6 col-lg-12">
                     <a href="#" class="d-block w-100">
                       <div class="small_news_widget d-flex">
                         <div class="image">
@@ -951,7 +980,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-md-6 col-lg-12">
                     <a href="#" class="d-block w-100">
                       <div class="small_news_widget d-flex">
                         <div class="image">
@@ -963,7 +992,7 @@
                       </div>
                     </a>
                   </div>
-                  <div class="col-lg-12">
+                  <div class="col-md-6 col-lg-12">
                     <a href="#" class="d-block w-100">
                       <div class="small_news_widget d-flex">
                         <div class="image">
@@ -979,7 +1008,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-xl-4 col-md-8 col-lg-6 mx-auto mt-4 mt-xxl-0">
             <div class="map_block">
               <h2 class="map_title">এক নজরে বাংলাদেশ</h2>
               <div class="map">
@@ -2499,7 +2528,7 @@
             <div class="search__">
               <form action="#">
                 <div class="row gx-3">
-                  <div class="col-lg-4">
+                  <div class="col-sm-4 mb-2 mb-sm-0 col-lg-4">
                     <div class="input_groups">
                       <select class="form-select shadow-none form-select-lg" aria-label="Large select example">
                         <option selected>--বিভাগ--</option>
@@ -2509,7 +2538,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-lg-4">
+                  <div class="col-sm-4 mb-2 mb-sm-0 col-lg-4">
                     <div class="input_groups">
                       <select class="form-select shadow-none form-select-lg" aria-label="Large select example">
                         <option selected>--জেলা--</option>
@@ -2519,7 +2548,7 @@
                       </select>
                     </div>
                   </div>
-                  <div class="col-lg-4">
+                  <div class="col-sm-4 mb-2 mb-sm-0 col-lg-4">
                     <div class="input_groups">
                       <select class="form-select shadow-none form-select-lg" aria-label="Large select example">
                         <option selected>--উপজেলা--</option>
@@ -2638,15 +2667,15 @@
     <!-- section five -->
     <section class="section_five">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
+        <div class="row g-4 gy-lg-0">
+          <div class="col-md-6 col-lg-4">
             <div class="section_title">
               <div class="row">
-                <div class="col-lg align-self-center">
+                <div class="col-sm align-self-center">
                   <h2 class="main_title">গণমাধ্যম</h2>
                 </div>
-                <div class="col-lg align-self-end">
-                  <div class="text-end">
+                <div class="col-sm align-self-end">
+                  <div class="text-sm-end mt-2 mt-sm-0">
                     <a class="read_more_btn" href="#">আরো খবর <i class="fas fa-chevron-right"></i></a>
                   </div>
                 </div>
@@ -2700,14 +2729,14 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-6 col-lg-4">
             <div class="section_title">
               <div class="row">
-                <div class="col-lg align-self-center">
+                <div class="col-sm align-self-center">
                   <h2 class="main_title">চাকুরী</h2>
                 </div>
-                <div class="col-lg align-self-end">
-                  <div class="text-end">
+                <div class="col-sm align-self-end">
+                  <div class="text-sm-end mt-2 mt-sm-0">
                     <a class="read_more_btn" href="#">আরো খবর <i class="fas fa-chevron-right"></i></a>
                   </div>
                 </div>
@@ -2761,14 +2790,14 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-6 col-lg-4">
             <div class="section_title">
               <div class="row">
-                <div class="col-lg align-self-center">
+                <div class="col-sm align-self-center">
                   <h2 class="main_title">ধর্ম</h2>
                 </div>
-                <div class="col-lg align-self-end">
-                  <div class="text-end">
+                <div class="col-sm align-self-end">
+                  <div class="text-sm-end mt-2 mt-sm-0">
                     <a class="read_more_btn" href="#">আরো খবর <i class="fas fa-chevron-right"></i></a>
                   </div>
                 </div>
@@ -2924,15 +2953,15 @@
     <!-- section five -->
     <section class="section_five">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
+        <div class="row g-4 gy-lg-0">
+          <div class="col-md-6 col-lg-4">
             <div class="section_title">
               <div class="row">
-                <div class="col-lg align-self-center">
-                  <h2 class="main_title">ফিচার</h2>
+                <div class="col-sm align-self-center">
+                  <h2 class="main_title">গণমাধ্যম</h2>
                 </div>
-                <div class="col-lg align-self-end">
-                  <div class="text-end">
+                <div class="col-sm align-self-end">
+                  <div class="text-sm-end mt-2 mt-sm-0">
                     <a class="read_more_btn" href="#">আরো খবর <i class="fas fa-chevron-right"></i></a>
                   </div>
                 </div>
@@ -2986,14 +3015,14 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-6 col-lg-4">
             <div class="section_title">
               <div class="row">
-                <div class="col-lg align-self-center">
-                  <h2 class="main_title">লাইফস্টাইল </h2>
+                <div class="col-sm align-self-center">
+                  <h2 class="main_title">চাকুরী</h2>
                 </div>
-                <div class="col-lg align-self-end">
-                  <div class="text-end">
+                <div class="col-sm align-self-end">
+                  <div class="text-sm-end mt-2 mt-sm-0">
                     <a class="read_more_btn" href="#">আরো খবর <i class="fas fa-chevron-right"></i></a>
                   </div>
                 </div>
@@ -3047,14 +3076,14 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-6 col-lg-4">
             <div class="section_title">
               <div class="row">
-                <div class="col-lg align-self-center">
-                  <h2 class="main_title">ভ্রমণ </h2>
+                <div class="col-sm align-self-center">
+                  <h2 class="main_title">ধর্ম</h2>
                 </div>
-                <div class="col-lg align-self-end">
-                  <div class="text-end">
+                <div class="col-sm align-self-end">
+                  <div class="text-sm-end mt-2 mt-sm-0">
                     <a class="read_more_btn" href="#">আরো খবর <i class="fas fa-chevron-right"></i></a>
                   </div>
                 </div>
@@ -3233,8 +3262,8 @@
             </a>
           </div>
           <div class="col-lg-7">
-            <div class="row g-4">
-              <div class="col-lg-6">
+            <div class="row g-4 gy-lg-0 mt-4 mt-lg-0">
+              <div class="col-sm-6 col-lg-6">
                 <div class="news_with_overlay_text mb-3">
                   <a href="#" class="d-block w-100">
                     <div class="image">
@@ -3245,7 +3274,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-sm-6 col-lg-6">
                 <div class="news_with_overlay_text mb-3">
                   <a href="#" class="d-block w-100">
                     <div class="image">
@@ -3256,7 +3285,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-sm-6 col-lg-6">
                 <div class="news_with_overlay_text mb-3">
                   <a href="#" class="d-block w-100">
                     <div class="image">
@@ -3267,7 +3296,7 @@
                   </a>
                 </div>
               </div>
-              <div class="col-lg-6">
+              <div class="col-sm-6 col-lg-6">
                 <div class="news_with_overlay_text mb-3">
                   <a href="#" class="d-block w-100">
                     <div class="image">
@@ -3287,15 +3316,15 @@
     <!-- section five -->
     <section class="section_five">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
+        <div class="row g-4 gy-lg-0">
+          <div class="col-md-6 col-lg-4">
             <div class="section_title">
               <div class="row">
-                <div class="col-lg align-self-center">
-                  <h2 class="main_title">স্বাস্থ্য</h2>
+                <div class="col-sm align-self-center">
+                  <h2 class="main_title">গণমাধ্যম</h2>
                 </div>
-                <div class="col-lg align-self-end">
-                  <div class="text-end">
+                <div class="col-sm align-self-end">
+                  <div class="text-sm-end mt-2 mt-sm-0">
                     <a class="read_more_btn" href="#">আরো খবর <i class="fas fa-chevron-right"></i></a>
                   </div>
                 </div>
@@ -3349,14 +3378,14 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-6 col-lg-4">
             <div class="section_title">
               <div class="row">
-                <div class="col-lg align-self-center">
-                  <h2 class="main_title">আইন আদালত </h2>
+                <div class="col-sm align-self-center">
+                  <h2 class="main_title">চাকুরী</h2>
                 </div>
-                <div class="col-lg align-self-end">
-                  <div class="text-end">
+                <div class="col-sm align-self-end">
+                  <div class="text-sm-end mt-2 mt-sm-0">
                     <a class="read_more_btn" href="#">আরো খবর <i class="fas fa-chevron-right"></i></a>
                   </div>
                 </div>
@@ -3410,14 +3439,14 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-6 col-lg-4">
             <div class="section_title">
               <div class="row">
-                <div class="col-lg align-self-center">
-                  <h2 class="main_title">মতামত </h2>
+                <div class="col-sm align-self-center">
+                  <h2 class="main_title">ধর্ম</h2>
                 </div>
-                <div class="col-lg align-self-end">
-                  <div class="text-end">
+                <div class="col-sm align-self-end">
+                  <div class="text-sm-end mt-2 mt-sm-0">
                     <a class="read_more_btn" href="#">আরো খবর <i class="fas fa-chevron-right"></i></a>
                   </div>
                 </div>
@@ -3488,7 +3517,7 @@
               </div>
             </div>
             <div class="row g-4">
-              <div class="col-lg-4">
+              <div class="col-md-6 col-lg-4">
                 <a href="#" class="d-block w-100">
                   <div class="medium_news_widget">
                     <div class="image">
@@ -3502,7 +3531,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-6 col-lg-4">
                 <a href="#" class="d-block w-100">
                   <div class="medium_news_widget">
                     <div class="image">
@@ -3516,7 +3545,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-4">
+              <div class="col-md-6 col-lg-4">
                 <a href="#" class="d-block w-100">
                   <div class="medium_news_widget">
                     <div class="image">
@@ -3531,7 +3560,7 @@
                 </a>
               </div>
 
-              <div class="col-lg-3">
+              <div class="col-md-6 col-lg-3">
                 <a href="#" class="d-block w-100">
                   <div class="medium_news_widget">
                     <div class="image">
@@ -3545,7 +3574,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col-md-6 col-lg-3">
                 <a href="#" class="d-block w-100">
                   <div class="medium_news_widget">
                     <div class="image">
@@ -3559,7 +3588,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col-md-6 col-lg-3">
                 <a href="#" class="d-block w-100">
                   <div class="medium_news_widget">
                     <div class="image">
@@ -3573,7 +3602,7 @@
                   </div>
                 </a>
               </div>
-              <div class="col-lg-3">
+              <div class="col-md-6 col-lg-3">
                 <a href="#" class="d-block w-100">
                   <div class="medium_news_widget">
                     <div class="image">
@@ -3589,13 +3618,34 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-3">
+          <div class="col-lg-3 mt-4 mt-lg-0">
             <div class="section_title">
               <div class="row">
                 <div class="col-lg align-self-center">
                   <h2 class="main_title">ফেসবুকে আমরা</h2>
                 </div>
               </div>
+            </div>
+            <div class="facebook_content">
+              <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https://www.facebook.com/themesbazar&amp;tabs=time&amp;width=280&amp;height=120&amp;small_header=false&amp;adapt_container_width=true&amp;hide_cover=false&amp;show_facepile=true&amp;appId=334182264340964"
+                width="280" height="120" style="border:none;overflow:hidden" scrolling="no" frameborder="0"
+                allowfullscreen="true"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <div class="section_title mt-4">
+              <div class="row">
+                <div class="col-lg align-self-center">
+                  <h2 class="main_title">টুইটারে আমরা </h2>
+                </div>
+              </div>
+            </div>
+            <div class="facebook_content">
+              <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true"
+                allowfullscreen="true" class=""
+                style="position: static; visibility: visible; width: 279px; height: 250px; display: block; flex-grow: 1;"
+                title="Twitter Timeline"
+                src="https://syndication.twitter.com/srv/timeline-profile/screen-name/themesbazar?creatorScreenName=themesbazar&amp;dnt=true&amp;embedId=twitter-widget-0&amp;features=eyJ0ZndfdGltZWxpbmVfbGlzdCI6eyJidWNrZXQiOltdLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X2ZvbGxvd2VyX2NvdW50X3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9iYWNrZW5kIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19yZWZzcmNfc2Vzc2lvbiI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfZm9zbnJfc29mdF9pbnRlcnZlbnRpb25zX2VuYWJsZWQiOnsiYnVja2V0Ijoib24iLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X21peGVkX21lZGlhXzE1ODk3Ijp7ImJ1Y2tldCI6InRyZWF0bWVudCIsInZlcnNpb24iOm51bGx9LCJ0ZndfZXhwZXJpbWVudHNfY29va2llX2V4cGlyYXRpb24iOnsiYnVja2V0IjoxMjA5NjAwLCJ2ZXJzaW9uIjpudWxsfSwidGZ3X3Nob3dfYmlyZHdhdGNoX3Bpdm90c19lbmFibGVkIjp7ImJ1Y2tldCI6Im9uIiwidmVyc2lvbiI6bnVsbH0sInRmd19kdXBsaWNhdGVfc2NyaWJlc190b19zZXR0aW5ncyI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdXNlX3Byb2ZpbGVfaW1hZ2Vfc2hhcGVfZW5hYmxlZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9LCJ0ZndfdmlkZW9faGxzX2R5bmFtaWNfbWFuaWZlc3RzXzE1MDgyIjp7ImJ1Y2tldCI6InRydWVfYml0cmF0ZSIsInZlcnNpb24iOm51bGx9LCJ0ZndfbGVnYWN5X3RpbWVsaW5lX3N1bnNldCI6eyJidWNrZXQiOnRydWUsInZlcnNpb24iOm51bGx9LCJ0ZndfdHdlZXRfZWRpdF9mcm9udGVuZCI6eyJidWNrZXQiOiJvbiIsInZlcnNpb24iOm51bGx9fQ%3D%3D&amp;frame=false&amp;hideBorder=false&amp;hideFooter=false&amp;hideHeader=false&amp;hideScrollBar=false&amp;lang=en&amp;maxHeight=250px&amp;origin=https%3A%2F%2Fthemebazar.xyz%2Flaraflash%2F&amp;sessionId=c548af51cc131649379c0190faed6c931d33d580&amp;showHeader=true&amp;showReplies=false&amp;siteScreenName=themesbazar&amp;theme=light&amp;transparent=false&amp;widgetsVersion=01917f4d1d4cb%3A1696883169554"></iframe>
             </div>
           </div>
         </div>
@@ -3686,7 +3736,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mt-4 mt-lg-0">
             <div class="section_title">
               <div class="row">
                 <div class="col-lg align-self-center">
@@ -3696,7 +3746,7 @@
             </div>
             <div class="video_gallery_widget">
               <div class="row g-3">
-                <div class="col-lg-12">
+                <div class="col-md-6 col-lg-12">
                   <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="d-block w-100 vidplay">
                     <div class="small_news_widget d-flex">
                       <div class="image position-relative">
@@ -3711,7 +3761,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-md-6 col-lg-12">
                   <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="d-block w-100 vidplay">
                     <div class="small_news_widget d-flex">
                       <div class="image position-relative">
@@ -3726,7 +3776,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-md-6 col-lg-12">
                   <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="d-block w-100 vidplay">
                     <div class="small_news_widget d-flex">
                       <div class="image position-relative">
@@ -3741,7 +3791,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-md-6 col-lg-12">
                   <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="d-block w-100 vidplay">
                     <div class="small_news_widget d-flex">
                       <div class="image position-relative">
@@ -3756,7 +3806,7 @@
                     </div>
                   </a>
                 </div>
-                <div class="col-lg-12">
+                <div class="col-md-6 col-lg-12">
                   <a href="https://www.youtube.com/watch?v=PkkV1vLHUvQ" class="d-block w-100 vidplay">
                     <div class="small_news_widget d-flex">
                       <div class="image position-relative">
@@ -3781,15 +3831,15 @@
     <!-- section five -->
     <section class="section_five">
       <div class="container">
-        <div class="row">
-          <div class="col-lg-4">
+        <div class="row g-4 gy-lg-0">
+          <div class="col-md-6 col-lg-4">
             <div class="section_title">
               <div class="row">
-                <div class="col-lg align-self-center">
-                  <h2 class="main_title">শিক্ষা ও সংস্কৃতি</h2>
+                <div class="col-sm align-self-center">
+                  <h2 class="main_title">গণমাধ্যম</h2>
                 </div>
-                <div class="col-lg align-self-end">
-                  <div class="text-end">
+                <div class="col-sm align-self-end">
+                  <div class="text-sm-end mt-2 mt-sm-0">
                     <a class="read_more_btn" href="#">আরো খবর <i class="fas fa-chevron-right"></i></a>
                   </div>
                 </div>
@@ -3843,14 +3893,14 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-6 col-lg-4">
             <div class="section_title">
               <div class="row">
-                <div class="col-lg align-self-center">
-                  <h2 class="main_title">ব্যবসা ও বাণিজ্য </h2>
+                <div class="col-sm align-self-center">
+                  <h2 class="main_title">চাকুরী</h2>
                 </div>
-                <div class="col-lg align-self-end">
-                  <div class="text-end">
+                <div class="col-sm align-self-end">
+                  <div class="text-sm-end mt-2 mt-sm-0">
                     <a class="read_more_btn" href="#">আরো খবর <i class="fas fa-chevron-right"></i></a>
                   </div>
                 </div>
@@ -3904,14 +3954,14 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-md-6 col-lg-4">
             <div class="section_title">
               <div class="row">
-                <div class="col-lg align-self-center">
-                  <h2 class="main_title">শেয়ার বাজার </h2>
+                <div class="col-sm align-self-center">
+                  <h2 class="main_title">ধর্ম</h2>
                 </div>
-                <div class="col-lg align-self-end">
-                  <div class="text-end">
+                <div class="col-sm align-self-end">
+                  <div class="text-sm-end mt-2 mt-sm-0">
                     <a class="read_more_btn" href="#">আরো খবর <i class="fas fa-chevron-right"></i></a>
                   </div>
                 </div>
@@ -4010,7 +4060,7 @@
               <p>বার্তা সম্পাদক : আবু হুরায়রা চৌধুরী</p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mt-4 mt-lg-0">
             <div class="footer_widget">
               <h2 class="footer_title">অফিস:</h2>
               <p>অফিস : মিরপুর, ঢাকা, বাংলাদেশ-১২১৬
@@ -4019,7 +4069,7 @@
               <p>মোবাইল : <a href="tel:01710-000000">01710-000000</a></p>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 mt-4 mt-lg-0">
             <div class="footer_widget">
               <h2 class="footer_title">আলোচিত সংবাদসমূহ ::</h2>
               <div class="widget_image d-flex">
@@ -4052,7 +4102,7 @@
             </div>
           </div>
           <div class="col-lg-6">
-            <div class="text text-end">
+            <div class="text text-lg-end">
               <p> News Paper Developed BY <a href="#">ThemesRare.com</a></p>
             </div>
           </div>

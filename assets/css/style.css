@@ -392,7 +392,7 @@ p {
 	color: var(--primary);
 }
 
-.main_menu .search button {
+.main_menu .search .search_btn {
 	border: 0;
 	background-color: var(--primary);
 	width: 42px;
@@ -402,8 +402,47 @@ p {
 	color: var(--white);
 }
 
-.main_menu .search button:hover {
+.main_menu .search .search_btn:hover {
 	background-color: var(--black);
+}
+
+.search .search-box {
+	position: absolute;
+	bottom: -90px;
+	right: 0;
+	width: 300px;
+	height: 50px;
+	transition: all linear .2s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.search .search-box input {
+	width: 100%;
+	height: 100%;
+	background-color: var(--white);
+	border: 2px solid var(--primary);
+	padding: 0 60px 0 20px;
+}
+
+.search .search-box button {
+	position: absolute;
+	top: 50%;
+	right: 4px;
+	transform: translateY(-50%);
+	background-color: var(--black);
+	color: var(--white);
+	width: 42px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	border: none;
+}
+
+.search:hover .search-box {
+	bottom: -60px;
+	opacity: 1;
+	visibility: visible;
 }
 
 .sub-menu {
@@ -418,6 +457,7 @@ p {
 	opacity: 0;
 	border: 1px solid var(--border-colour);
 	margin-top: 20px;
+	z-index: 9;
 }
 
 .sub-menu li {
@@ -574,7 +614,8 @@ p {
 	line-height: 50px;
 	transition: var(--transision);
 }
-.medium_news_widget:hover .gallery_view_icon{
+
+.medium_news_widget:hover .gallery_view_icon {
 	background-color: var(--primary);
 	color: var(--white);
 }
@@ -609,6 +650,7 @@ p {
 	flex: 0 0 auto;
 	border-radius: 5px;
 	overflow: hidden;
+	width: 100px;
 }
 
 .small_news_widget .text {
@@ -646,6 +688,7 @@ p {
 	left: 0;
 	font-size: 20px;
 	transition: var(--transision);
+	width: 100%;
 }
 
 .news_with_overlay_text .news_title:hover {
@@ -1305,7 +1348,39 @@ footer .footer_btm a:hover {
 	color: var(--primary);
 }
 
-/* category wise news area start */
-.category_wise_news {}
 
-/* category wise news area end */
+/* pagination area */
+
+.pagination {
+	margin-top: 50px;
+}
+
+.pagination ul li {
+	display: inline-block;
+}
+
+.pagination ul li a {
+	background-color: var(--white);
+	width: 40px;
+	height: 40px;
+	border-radius: 5px;
+	text-align: center;
+	line-height: 40px;
+	color: var(--black);
+	border: 1px solid rgba(198, 187, 159, 0.5);
+	font-size: 14px;
+	font-weight: 500;
+	margin: 0 4px;
+}
+
+.pagination ul li a:hover {
+	background-color: var(--primary);
+	color: var(--white);
+	border-color: var(--white);
+}
+
+.pagination ul li.active a {
+	background-color: var(--primary);
+	color: var(--white);
+	border-color: var(--white);
+}
