@@ -440,7 +440,7 @@ p {
 }
 
 .search:hover .search-box {
-	bottom: -60px;
+	bottom: -56px;
 	opacity: 1;
 	visibility: visible;
 }
