@@ -60,6 +60,12 @@
 			{
 				breakpoint: 768,
 				settings: {
+					slidesToShow: 2,
+				},
+			},
+			{
+				breakpoint: 576,
+				settings: {
 					slidesToShow: 1,
 				},
 			},
