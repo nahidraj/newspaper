@@ -1451,6 +1451,116 @@ footer .footer_btm a:hover {
 	color: var(--primary);
 }
 
+/* news details area start */
+.news_details_page .news_details_title h1 {
+	font-size: 36px;
+}
+
+.news_details_page .protibedok .image {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	flex: 0 0 auto;
+	margin-right: 10px;
+
+}
+
+.news_details_page .protibedok .image img {
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+}
+
+.news_details_page .protibedok .prokash h4 {
+	font-size: 18px;
+	font-weight: 600;
+	color: var(--black);
+}
+
+.news_details_page .news-details-description p {
+	font-size: 18px;
+	font-weight: 400;
+	margin-bottom: 24px;
+}
+
+.news_details_page .montobbo h4 {
+	background-color: var(--black);
+	color: var(--white);
+	display: inline-block;
+	padding: 6px 20px;
+}
+
+
+.news_details_page .author {
+	background-color: var(--background);
+	padding: 35px;
+	margin-top: 10px;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+
+.news_details_page .avatar {
+	flex: 0 0 auto;
+}
+
+.news_details_page .avatar .image {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 1px solid var(--border-colour);
+	padding: 5px;
+}
+
+.news_details_page .avatar .image img {
+	border-radius: 50%;
+}
+
+.news_details_page .info {
+	margin-left: 40px;
+}
+
+.news_details_page .info .title {
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 12px;
+}
+
+.news_details_page .info .author_news {
+	background-color: var(--black);
+	color: var(--white);
+	font-size: 18px;
+	font-weight: 500;
+	padding: 6px 20px;
+	border-radius: 4px;
+}
+
+.news_details_page .info .author_news:hover {
+	background-color: var(--primary);
+}
+
+.news_details_page .author_title {
+	background-color: var(--black);
+	color: var(--white);
+	display: inline-block;
+	padding: 6px 20px;
+}
+
+.news_details_page .news_sidebar{
+	position: sticky;
+	top: 70px;
+}
+
+.news_details_page .news-details-big-image .image{
+	height: 480px;
+}
+
+.news_details_page .news-details-big-image .image img{
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+}
+
+/* news details area end */
 
 /* pagination area */
 
